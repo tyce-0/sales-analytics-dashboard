@@ -1,9 +1,8 @@
 # Super-stores-Dataset
 # Sales Analytics Dashboard
+What does it actually cost a business to offer discounts? This project digs into 10,000+ retail orders from a fictional US-based superstore uncovering that discounts above 40% consistently produce negative profit margins across all product categories.
 
-An end-to-end data analytics project on 9,792 retail orders.
-Covers data cleaning, SQL analysis, and an interactive Streamlit dashboard.
-
+Built end-to-end: raw data cleaning → SQL analysis → interactive Streamlit dashboard with filters for year, region, and product category.
 **Live demo:**  http://localhost:8501/
 
 ## Key findings
