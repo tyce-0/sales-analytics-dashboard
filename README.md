@@ -3,7 +3,7 @@
 What does it actually cost a business to offer discounts? This project digs into 10,000+ retail orders from a fictional US-based superstore uncovering that discounts above 40% consistently produce negative profit margins across all product categories.
 
 Built end-to-end: raw data cleaning → SQL analysis → interactive Streamlit dashboard with filters for year, region, and product category.
-**Live demo:**  http://localhost:8501/
+**Live demo:**  **Live demo:** https://sales-analytics-dashboard-hbqfpr4yh5g4ldwjdwy3r9.streamlit.app/
 
 ## Key findings
 - Technology drives the highest revenue at $827k despite fewer orders
