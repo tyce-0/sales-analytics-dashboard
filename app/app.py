@@ -1,18 +1,15 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import sqlite3
 import os
 
-# Build absolute path to the database
+# Creating an absolute path to the cleaned CSV
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DB_PATH = os.path.join(BASE_DIR, 'data', 'sales.db')
+CSV_PATH = os.path.join(BASE_DIR, 'data', 'processed', 'sales_clean.csv')
 
 @st.cache_data
 def load_data():
-    conn = sqlite3.connect(DB_PATH)
-    df = pd.read_sql("SELECT * FROM orders", conn)
-    conn.close()
+    df = pd.read_csv(CSV_PATH)
     df['order_date'] = pd.to_datetime(df['order_date'])
     return df
 
